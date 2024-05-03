@@ -1,0 +1,2 @@
+SELECT start_point_name, count(title) as 'num_hikes' FROM './raw_oh_hikes.parquet' GROUP BY start_point_name
+SELECT max(num_hikes) from (SELECT start_point_name, count(title) as 'num_hikes' FROM './raw_oh_hikes.parquet' GROUP BY start_point_name);

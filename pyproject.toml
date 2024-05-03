@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "trails"
+version = "0.1.0"
+description = ""
+authors = ["Noah Schill <noahrschill@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.12"
+beautifulsoup4 = "^4.12.3"
+pydantic = "^2.6.4"
+requests = "^2.31.0"
+pandas = "^2.2.1"
+duckdb = "^0.10.1"
+python-dotenv = "^1.0.1"
+tqdm = "^4.66.2"
+loguru = "^0.7.2"
+pyarrow = "^16.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.4"
+ipython = "^8.22.2"
+pytest-mock = "^3.14.0"
+requests-mock = "^1.12.1"
+loguru = "^0.7.2"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
